@@ -11,7 +11,7 @@ public class Misaligned {
         return i * j;
     }
     
-    public static string printAlignment(int i,int j,String minorColor,String majorColor){
+    public static String printAlignment(int i,int j,String minorColor,String majorColor){
         String number = Integer.toString(i * 5 + j);
     	String result = number.concat(" | " + majorColor + " | " + minorColor);
     	return result;
@@ -20,8 +20,8 @@ public class Misaligned {
     public static void main(String[] args) { 
         int result = printColorMap();
         assert(result == 25);
-        String result = printAlignment(2, 5, "White", "Blue");
-		assert result.equals("15 | White | Blue");
+        String resultAligned = printAlignment(2, 5, "White", "Blue");
+	assert(resultAligned.equals("15 | White | Blue"));
         System.out.println("All is well (maybe!)");
     }
 }
