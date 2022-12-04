@@ -30,8 +30,8 @@ public class Misaligned {
     public static void main(String[] args) { 
         int result = printColorMap();
         assert(result == 25);
-	String result = doublePrintAlignment(2, 5, "White", "Blue");
-	assert result.equals("15 | White | Blue");    
+	String resultDouble = doublePrintAlignment(2, 5, "White", "Blue");
+	assert resultDouble.equals("15 | White | Blue");    
 	String resultAlignedSingle = singlePrintAlignment(0, 5, "White", "Blue");
 	assert resultAlignedSingle.equals("5  | White | Blue");
         System.out.println("All is well (maybe!)");
