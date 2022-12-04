@@ -33,8 +33,8 @@ public class Misaligned {
 	String resultDouble = doublePrintAlignment(2, 5, "White", "Blue");
     	String resultAlignedSingle = singlePrintAlignment(0, 5, "White", "Blue");
 	System.out.println(resultDouble+"\n"+resultAlignedSingle);
-	assert resultDouble.equals("15 | White | Blue");    
-	assert resultAlignedSingle.equals("5  | White | Blue");
+	assert resultDouble.equals("15 | Blue | White");
+	assert resultAlignedSingle.equals("5  | Blue | White");
         System.out.println("All is well (maybe!)");
     }
 }
