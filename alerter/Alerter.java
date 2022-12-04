@@ -8,6 +8,7 @@ public class Alerter {
         //assuming till 70C its fine
          if(celcius < 70)
                 return 200;
+        return 500;
     }
     static void alertInCelcius(float farenheit) {
         float celcius = (farenheit - 32) * 5 / 9;
