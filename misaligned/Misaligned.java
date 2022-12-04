@@ -32,7 +32,7 @@ public class Misaligned {
         assert(result == 25);
 	String resultDouble = doublePrintAlignment(2, 5, "White", "Blue");
     	String resultAlignedSingle = singlePrintAlignment(0, 5, "White", "Blue");
-	System.out.println(resultDouble+"\n"+resultAlignedSingle)
+	System.out.println(resultDouble+"\n"+resultAlignedSingle);
 	assert resultDouble.equals("15 | White | Blue");    
 	assert resultAlignedSingle.equals("5  | White | Blue");
         System.out.println("All is well (maybe!)");
