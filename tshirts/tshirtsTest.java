@@ -4,6 +4,7 @@ class tshirtsTest {
 
 	@Test
 	void testSmallSize() {
+		System.out.println("Small Tests");
 		for (int i = 0; i < 10; i++) {
 			int smallSize = (int) (Math.random() * 37);
 			assert(tshirts.size(smallSize) == "S");
