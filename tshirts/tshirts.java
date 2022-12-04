@@ -2,7 +2,8 @@ public class Tshirts {
     static String size(int cms) {
         if(cms < 38) {
             return "S";
-        } else if(cms > 38 && cms < 42) {
+            //suppose 38 is medium
+        } else if(cms > 37 && cms < 42) {
             return "M";
         } else {
             return "L";
