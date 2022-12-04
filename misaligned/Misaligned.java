@@ -30,10 +30,10 @@ public class Misaligned {
     public static void main(String[] args) { 
         int result = printColorMap();
         assert(result == 25);
-        String resultAlignedDouble = doublePrintAlignment(2, 5, "White", "Blue");
-	assert(resultAlignedDouble.equals("15 | White | Blue"));
-	String resultAlignedSingle = singlePrintAlignment(2, 3, "White", "Blue");
-	assert(resultAlignedSingle.equals("9  | White | Blue"));
+	String result = doublePrintAlignment(2, 5, "White", "Blue");
+	assert result.equals("15 | White | Blue");    
+	String resultAlignedSingle = singlePrintAlignment(0, 5, "White", "Blue");
+	assert resultAlignedSingle.equals("5  | White | Blue");
         System.out.println("All is well (maybe!)");
     }
 }
